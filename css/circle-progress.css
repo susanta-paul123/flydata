@@ -1,0 +1,79 @@
+/**
+* jQuery asPieProgress v0.4.7
+* https://github.com/amazingSurge/jquery-asPieProgress
+*
+* Copyright (c) amazingSurge
+* Released under the LGPL-3.0 license
+*/
+.circle_progress {
+  position: relative;
+  text-align: center;
+
+  -webkit-transform-style: preserve-3d;
+
+          transform-style: preserve-3d;
+}
+.circle_progress {
+  width:108px;
+}
+.circle_progress__svg {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.circle_progress__svg svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block; 
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.circle_progress__content, .circle_progress__number, .pie_progress__label, .pie_progress__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.circle_progress__number {
+  font-size: 30px;
+  font-weight:700;
+}
+
+.match-progress .circle_progress__number{
+  font-size: 18px;
+  font-weight:700;
+  color:#0072ec;
+  top: 40%;
+}
+.match-progress .pie_progress__label{
+  font-size: 18px;
+  font-weight:700;
+  color:#0072ec;
+  top: 30%;
+}
+
+.pie_progress__label {
+  margin-top: 32px;
+  font-size: 12px;
+}
+
+@media(max-width:992px){
+  .pie_progress {
+    width:90px;
+  }
+}
+
+@media(max-width:576px){
+  .pie_progress {
+    width:68px;
+  }
+}
